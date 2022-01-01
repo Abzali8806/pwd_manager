@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  psqldb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: kilk8806
+      POSTGRES_USER: postgres
+    ports:
+      - '5432:5432'
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: Abdullahali8102@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: kilk8806
+    ports:
+      - '5555:80'
